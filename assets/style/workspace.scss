@@ -1,0 +1,62 @@
+@import "./components";
+@import "./layout";
+
+$orange: #FF5722;
+$black: #222831;
+$white: #ffffff;
+
+.section {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.section__topMenu {
+  margin-top: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex; 
+}
+
+.nav__item {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  color: black;
+  &:hover {
+    color: $orange;
+  }
+}
+
+.nav__link.link_active {
+  color: $orange;
+}
+
+.nav__entry {
+  display: flex;
+}
+
+.entry__wrapper {
+  padding: 12px 24px;
+}
+
+.entry__wrapper-signup {
+  background-color: $orange;
+  box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
+  .entry__link-signup {
+    color: $white;
+  }
+}
+
+.entry__link-login {
+  color: $orange;
+}
